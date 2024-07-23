@@ -1,0 +1,17 @@
+  268  git clone git@github.com:Ternario/ha-12.git
+  269  cd ha-12
+  270  git branch -v feature
+  271  git branch -v
+  272  git checkout feature
+  273  touch README.md
+  274  git add .
+  275  git commit -m "Add"
+  276  git push -u origin feature
+  277  git commit --amend -m "Add file readme.md"
+  278  git commit --amend -m "ammend"
+  279  git checkout main
+  280  git merge feature
+  281  touch history.txt
+  282  history >> history.txt
+  283  cat history.txt 
+  284  history >> history.txt | tail -15
